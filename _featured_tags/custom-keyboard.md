@@ -10,7 +10,7 @@ slug: custom-keyboard
 
 # (Optional) Write a short (~150 characters) description of this featured tag.
 description: >
-  커스텀 키보드 제작기를 다루는 공간입니다.
+  커스텀 키보드 제작기를 다루는 태그입니다.
 
 # (Optional) You can disable grouping posts by date.
 # no_groups: true
