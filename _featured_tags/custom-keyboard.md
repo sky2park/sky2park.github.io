@@ -6,7 +6,7 @@ layout: list
 title: Custom Keyboard
 
 # The name of the tag, used in a post's front matter (e.g. tags: [<slug>]).
-slug: blog/custom-keyboard
+slug: custom-keyboard
 
 # (Optional) Write a short (~150 characters) description of this featured tag.
 description: >
