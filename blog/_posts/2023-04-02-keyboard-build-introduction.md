@@ -3,7 +3,6 @@ layout:       post
 title:        키보드 제작기를 작성하기에 앞서
 tags:         [custom-keyboard]
 description:  '키보드 제작기 서문입니다.'
-comments:     true
 ---
 
 처음으로 구매한 기계식 키보드는 레오폴드 FC750R 갈축이었습니다.  
