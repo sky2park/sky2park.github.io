@@ -1,7 +1,8 @@
 ---
 layout:       post
 title:        키보드 만들기 두 번째 - Kicad 설치하고, 외부 라이브러리 적용하기
-tags:         [custom-keyboard]
+categories:   [custom keyboard]
+tags:         [제작기]
 description:  '커스텀 키보드 만들기 두 번째 시간. Kicad를 설치하고 환경 설정을 해 봅시다.'
 ---
 

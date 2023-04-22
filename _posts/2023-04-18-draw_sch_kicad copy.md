@@ -1,7 +1,8 @@
 ---
 layout:       post
 title:        키보드 만들기 세 번째 - kicad 회로도 그리기
-tags:         [custom-keyboard]
+categories:   [custom keyboard]
+tags:         [제작기]
 description:  'Kicad 회로도를 그려봅니다.'
 ---
 

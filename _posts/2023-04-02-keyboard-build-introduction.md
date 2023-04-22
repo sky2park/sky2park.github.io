@@ -1,7 +1,8 @@
 ---
 layout:       post
 title:        키보드 제작기를 작성하기에 앞서
-tags:         [custom-keyboard]
+categories:   [custom keyboard]
+tags:         [제작기]
 description:  '키보드 제작기 서문입니다.'
 ---
 

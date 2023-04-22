@@ -1,108 +1,108 @@
-# External plugins
-# See http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html for making `jekyll archives` work.
-plugins:
-  - jekyll-archives # Sorry, not GitHub pages friendly!
-  - jekyll-sitemap
-  - jekyll-paginate-v2
-
-exclude:
-  - "/vendor/"
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+theme: jekyll-theme-so-simple
+# remote_theme: mmistakes/so-simple-theme
+skin: "/assets/css/skins/default.css"
+locale: en-US
 title: "발자국, 톺아보기"
-subtitle: "기억은 그것을 가장 필요로 할 때 기록되지 않으면 소용없는 것이다."
-email: sky2park@gmail.com
-name: Haneol Park
-description: >
-  기억을 기록하는 곳.<br>그리고,<br>기록을 기억하는 곳.
-# Base URL of site (i.e. /blog). It should always start with a slash,
-# and never end with a slash. Set it to a blank value if hosting at the
-# root of your server.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
-cover: "/assets/header_image.jpg"
-logo: "/assets/logo.png"
+description: "기억은 그것을 가장 필요로 할 때 기록되지 않으면 소용없는 것이다."
+baseurl: # the subpath of your site, e.g. "/blog"
+url: "https://sky2park.github.io/"
+logo: "images/logo.png"
+date_format: "%B %-d, %Y"
+read_time: # reading time estimates, e.g. true
+words_per_minute: # 200
+mathjax:
+  enable: # MathJax equations, e.g. true, false (default)
+  combo:  # "tex-svg" (default), "tex-mml-chtml", etc.: docs.mathjax.org/en/latest/web/components/combined.html
+  tags:  # "none", "ams" (default), "all"
+google_fonts:
+  - name: "IBM Plex Sans KR"
+    weights: "300,300i,700,700i"
+google_analytics: # Google Analytics id, e.g. "UA-NNNNNNNN-N"
+disqus:
+  shortname: # Disqus shortname, e.g. "my_disqus_shortname"
+twitter:
+  username: # site's Twitter username, e.g. "mmistakes"
+
+# Liquid
+liquid:
+  error_mode: strict
 
 # Build settings
+permalink: /blog/:title/
 markdown: kramdown
-inter_post_navigation: true
-highlightjs_theme: "monokai-sublime"
+feed:
+  path: atom.xml
 
-# Pagination Settings
-# https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
-pagination:
-  enabled: true
-  per_page: 5
-  permalink: "/page/:num/"
-  sort_reverse: true
+# Pagination - https://jekyllrb.com/docs/pagination/
+paginate: 5
+paginate_path: /page:num/
 
-# Archive settings (see https://github.com/jekyll/jekyll-archives/)
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layout: 'archive'
-  permalinks:
-    category: '/category/:name/'
-    tag: '/tag/:name/'
+# Search
+search_full_content: true # can have performance implications for large sites
 
-# Disqus comments
-# disqus_shortname: bencentra
+# Taxonomy pages
+category_archive_path: "/categories/#"
+tag_archive_path: "/tags/#"
 
-# Google analytics
-# ga_tracking_id: "UA-XXXX-1"
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
 
-# Category descriptions (for archive pages)
-descriptions:
-  - tag: custom-keyboard
-    desc: "커스텀 키보드 제작기를 다루는 공간입니다."
-  - tag: general
-    desc: "사는 이야기 하는 공간입니다."
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
 
-# Social icons and sharing options
-#
-# Social settings are used in two places:
-# * In the footer, as links to your personal profiles
-# * After each blog post for sharing widgets
-#
-# Example:
-#
-# social:
-#   - name: Twitter                         # Name of the service
-#     icon: twitter                         # Font Awesome icon to use (minus fa- prefix)
-#     username: "@TheBenCentra"             # (User) Name to display in the footer link
-#     url: https://twitter.com/TheBenCentra # URL of your profile (leave blank to not display in footer)
-#     desc: Follow me on Twitter            # Description to display as link title, etc
-#     share: true                           # Include in the "Share" section of posts
-social:
-  - name: GitHub
-    icon: github
-    username: sky2park
-    url: https://github.com/sky2park
-    desc: Fork me on GitHub
-    share: false
+# Front Matter Defaults
+defaults:
+  # Posts defaults
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      share: true
 
-  - name: Steam
-    icon: steam
-    username: "Leppy"
-    url: https://steamcommunity.com/profiles/76561198065509817/
-    desc: Friend me on Steam
-    share: false
+# Site Author
+author:
+  name: Haneol Park
+  picture: /images/profile.png
+  email: sky2park@gmail.com
+  twitter:
+  links:
+    - title: GitHub
+      url: https://github.com/sky2park
+      icon: fab fa-github
+    - title: Steam
+      url: https://steamcommunity.com/profiles/76561198065509817
+      icon: fab fa-steam
 
-# Social sharing protocols
-# These are for automatically generating sharing metadata for FB and Twitter
-# OS Protocol is for sharing the source of your site, if you're interested. For more, see osprotocol.com
-protocols:
-    fb_image: "/assets/logo.png"
-    fb_image_width: 620
-    fb_image_height: 620
-    fb_image_type: "image/png"
-
-    twitter_image: "/assets/logo.png"
-
-    os_repo: "https://github.com/bencentra/centrarium.com"
-    os_rcs_type: "git"
-    os_src: "git@github.com:bencentra/centrarium.com.git"
-
-# Posts list setting (tags / categories)
-limit: 5
+# Footer Links
+footer_links:
+  - title: Feed
+    url: atom.xml
+    icon: fas fa-rss-square

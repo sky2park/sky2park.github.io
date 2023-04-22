@@ -1,7 +1,8 @@
 ---
 layout:       post
 title:        키보드 만들기 첫 번째 - 레이아웃 정하기, 키캡 정하기
-tags:         [custom-keyboard]
+categories:   [custom keyboard]
+tags:         [제작기]
 description:  '커스텀 키보드 만들기 첫 번째 시간입니다. 배열을 정하고, 키캡을 골라봅시다.'
 ---
 
