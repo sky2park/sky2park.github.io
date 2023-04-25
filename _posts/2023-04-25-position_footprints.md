@@ -97,3 +97,5 @@ description:  '풋프린트를 배치해 봅시다.'
 DRC까지 모두 해결하고 나면, 드디어 모든 작업이 완료되었습니다. 이 포스트를 처음 작성하기 시작한게 22일 밤인데, 완성하는데 3일이 걸렸네요. 다음 포스트에서는 PCB를 주문하고, 보강판을 포함한 하우징을 만들어 보겠습니다.
 
 ![완성](https://user-images.githubusercontent.com/38902150/234176272-483412cb-9068-4451-bdf8-3f96abd8c605.png)
+
+> 참고 : https://github.com/SonalPinto/purple-owl
